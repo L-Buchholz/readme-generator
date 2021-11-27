@@ -58,9 +58,13 @@ const questions = [
   },
   {
     type: "input",
-    message:
-      "What is the best way for users of this project to contact you (including an email address, if applicable)?",
+    message: "What is the best way for users of this project to contact you?",
     name: "questions3",
+  },
+  {
+    type: "input",
+    message: "Please share an email address where you can be contacted:",
+    name: "questions4",
   },
 ];
 
@@ -100,20 +104,23 @@ function createReadMe(response) {
     </p>
   <h2 id="contributing">Contributing</h2>
   <p>Additional contributors to this program are listed below <em>(blank if none)</em>.
+  <br><br>
   ${response.contributing}</p>
   <h2 id="tests">Tests</h2>
   <p>Applicable tests for this program are listed below <em>(blank if none)</em>.
+  <br><br>
   ${response.tests}</p>
   <h2 id="questions">Questions?</h2>
     <p>
     This project was created by: <a href="${response.questions2}" 
-    target="blank">${response.questions1}</a>.</p>
+    target="blank">${response.questions1}</a></p>
   <h2>Contact Info</h2>
-  <p>${response.questions3}</p>`;
+  <p>${response.questions3}</p><br><br>
+  <a href="mailto: ${response.questions4}">Email</a>`;
 }
 
 inquirer.prompt(questions).then((response) => {
-  fs.writeFile("userREADME.md", createReadMe(response), (err) => {
+  fs.writeFile("userREADME4.md", createReadMe(response), (err) => {
     err
       ? console.error(err)
       : console.log("Responses saved to new README file!");
