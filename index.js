@@ -73,20 +73,12 @@ function init() {}
 // Function call to initialize app
 init();
 
-/*inquirer.prompt(questions).then((response) => {
-  fs.writeFile("userREADME.md", JSON.stringify(response), (err) => {
-    err
-      ? console.error(err)
-      : console.log("Responses saved to new README file!");
-  });
-});
-*/
-
 function createReadMe(response) {
   return `<h1>${response.title}</h1> 
   <h2>Description</h2>
   <p>${response.description}</p>
   <h2>Table of Contents</h2>
+  <p>*LICENSE AS A FUNCTION GOES HERE*</p>
   <ul>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a>
@@ -107,10 +99,10 @@ function createReadMe(response) {
     target="blank">ChooseALicense.com</a>.
     </p>
   <h2 id="contributing">Contributing</h2>
-  <p>Additional contributors to this program are listed below (blank if none).
+  <p>Additional contributors to this program are listed below <em>(blank if none)</em>.
   ${response.contributing}</p>
   <h2 id="tests">Tests</h2>
-  <p>Applicable tests for this program are listed below (blank if none).
+  <p>Applicable tests for this program are listed below <em>(blank if none)</em>.
   ${response.tests}</p>
   <h2 id="questions">Questions?</h2>
     <p>
@@ -127,23 +119,3 @@ inquirer.prompt(questions).then((response) => {
       : console.log("Responses saved to new README file!");
   });
 });
-
-/*
-Once we've prompted the user for input, the response comes back as an object
-
-fs.writeFile("index.html", data we want to write, callback)
-
-function createHtml(response) {
-    return `<h1>${response.name}</h1>`
-}
-
-Values for HTML: 
-{response.name} -- Put in header: `<h1>${response.name}</h1>` [example]
-{response.location} -- Put as sub-header: `<h2>${response.location}</h2>`
-{response.bio} -- Put in paragraph: `<p>${response.bio}</p>`
-{response.linkedIn} -- Put as URL 1: `<url1>${response.linkedIn}</url1>`
-{response.gitHub} -- Put as URL 2: `<url2>${response.gitHub}</url2>`
-*/
-
-//Create HTML function that accepts a template string of your entire HTML document
-//THEN use temporal literals to enter the neccessary values
