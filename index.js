@@ -74,11 +74,11 @@ function init() {}
 init();
 
 function createReadMe(response) {
-  return `<h1>${response.title}</h1> 
+  return `<h1>${response.title} 
+  <p>*LICENSE LOGO AS A FUNCTION GOES HERE*</p>
   <h2>Description</h2>
   <p>${response.description}</p>
   <h2>Table of Contents</h2>
-  <p>*LICENSE AS A FUNCTION GOES HERE*</p>
   <ul>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a>
