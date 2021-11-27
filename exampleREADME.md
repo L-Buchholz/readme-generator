@@ -4,6 +4,8 @@
 
 <license badge goes here using function based on license>
 
+![License](https://img.shields.io/static/v1?&label=License&message=<EXAMPLE>.0&color=green.svg)
+
 ## Description
 
 ```

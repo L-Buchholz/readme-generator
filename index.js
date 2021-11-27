@@ -1,5 +1,5 @@
 /*Packages required for README application*/
-const markdown = require("./utils/generateMarkdown");
+const markdown = require("./utils/generateMarkdown.js");
 
 const inquirer = require("inquirer");
 
@@ -79,7 +79,7 @@ init();
 
 function createReadMe(response) {
   return `<h1>${response.title} 
-  <p>*LICENSE LOGO AS A FUNCTION GOES HERE*</p>
+  <svg>(https://img.shields.io/static/v1?&label=License&message=${markdown.renderLicenseBadge}.0&color=green.svg)</svg>
   <h2>Description</h2>
   <p>${response.description}</p>
   <h2>Table of Contents</h2>
