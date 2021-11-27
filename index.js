@@ -79,7 +79,8 @@ init();
 
 function createReadMe(response) {
   return `<h1>${response.title} 
-  <svg>(https://img.shields.io/static/v1?&label=License&message=${markdown.renderLicenseBadge}.0&color=green.svg)</svg>
+  <br>
+  <img src ="https://img.shields.io/static/v1?&label=License&message=${markdown.renderLicenseBadge}&color=green.svg"/>
   <h2>Description</h2>
   <p>${response.description}</p>
   <h2>Table of Contents</h2>
@@ -120,7 +121,7 @@ function createReadMe(response) {
 }
 
 inquirer.prompt(questions).then((response) => {
-  fs.writeFile("userREADME4.md", createReadMe(response), (err) => {
+  fs.writeFile("userREADME5.md", createReadMe(response), (err) => {
     err
       ? console.error(err)
       : console.log("Responses saved to new README file!");

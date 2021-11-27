@@ -18,29 +18,35 @@ mit: "MIT",
 */
 
 function renderLicenseBadge(license) {
-  let apacheLic = "Apache-2.0";
-  let gnuGPLlic = "GNU-GPLv3";
-  let iscLic = "ISC";
-  let mitLic = "MIT";
-  const license = [
-    { apache: "Apache License 2.0" },
-    { gnu: "GNU GPLv3" },
-    { isc: "ISC License" },
-    { mit: "MIT" },
-  ];
-  if (response.description == license.apache) {
-    return apacheLic;
-  } else if (response.description == license.gnu) {
-    return gnuGPLlic;
-  } else if (response.description == license.isc) {
-    return iscLic;
-  } else if (response.description == license.mit) {
-    return mitLic;
+  /*
+  const apacheLic = "Apache-2.0";
+  const gnuGPLlic = "GNU-GPLv3";
+  const iscLic = "ISC";
+  const mitLic = "MIT";
+  const otherLic = "(Other)";
+  */
+  const licenseOptions = {
+    apache: "Apache License 2.0",
+    gnu: "GNU GPLv3",
+    isc: "ISC License",
+    mit: "MIT",
+  };
+  if (license == licenseOptions.apache) {
+    return "Apache-2.0";
+  } else if (license == licenseOptions.gnu) {
+    return "GNU-GPLv3";
+  } else if (license == licenseOptions.isc) {
+    return "ISC";
+  } else if (license == licenseOptions.mit) {
+    return "MIT";
   } else {
-    return;
+    return "(Other)";
   }
 }
+renderLicenseBadge;
+console.log(renderLicenseBadge);
 
+/*
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
@@ -48,6 +54,7 @@ function renderLicenseLink(license) {}
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
+*/
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
