@@ -95,8 +95,8 @@ function generateMarkdown(response) {
     <p>
     This project was created by: <a href="${response.questions2}" 
     target="blank">${response.questions1}</a></p>
-  <h2>Contact Info</h2>
-  <p>${response.questions3}</p><br><br>
+  <h3>Contact Info</h3>
+  <p>${response.questions3}</p>
   <a href="mailto: ${response.questions4}">Email</a>`;
 }
 

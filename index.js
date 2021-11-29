@@ -75,14 +75,3 @@ inquirer.prompt(questions).then((response) => {
       : console.log("Responses saved to new README file!");
   });
 });
-
-/*
-//Function to write README file
-function writeToFile(fileName, data) {}
-
-//Function to initialize app
-function init() {}
-
-//Function call to initialize app
-init();
-*/
