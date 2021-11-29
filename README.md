@@ -26,7 +26,7 @@ Additionally, a video walk-through highlighting the program's functionality has 
 
 The following is a screenshot of a completed README.md file generated using this program, highlighting the program's appearance and functionality:
 
-![Completed README.md document. This image includes: a header indicating the title of the program; a badge showing its related license; and a project description followed by a Table of Contents which links to sections not shown here.](./assets/images/[IMAGE].png)
+![Completed README.md document. This image includes: a header indicating the title of the program; a badge showing its related license; and a project description followed by a Table of Contents and related README sections.](./assets/README-screenshot.png)
 
 ## Link to README.md file completed using generator
 
@@ -34,4 +34,4 @@ A link to the above README.md file is available here: https://GITHUB LINK HERE F
 
 ## Link to video walk-through of README file generator
 
-As the README generator cannot be deployed at a live URL, a video highlighting a walk-through of using this generator is included here: https://[GOOGLE DRIVE LINK HERE]
+As the README generator cannot be deployed at a live URL, a video highlighting a walk-through of using this generator is included here: https://drive.google.com/file/d/1lWzxJQ53hvwlWd-AQWK2m5y4uvP3oruP/view?usp=sharing
