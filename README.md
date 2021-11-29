@@ -30,7 +30,7 @@ The following is a screenshot of a completed README.md file generated using this
 
 ## Link to README.md file completed using generator
 
-A link to the above README.md file is available here: https://GITHUB LINK HERE FOR USER SAMPLE README -- SAVED TO THIS REPO]
+A link to the above README.md file is available here: https://github.com/L-Buchholz/readme-generator/blob/main/user_README.md
 
 ## Link to video walk-through of README file generator
 
